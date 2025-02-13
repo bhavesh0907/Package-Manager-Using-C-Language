@@ -1,53 +1,62 @@
-About
+# Package Manager
 
-This C program implements a simple Package Manager that allows users to install, remove, and list packages using a command-line interface. It maintains package information in an array and ensures that duplicate installations are prevented while enabling basic package management operations. 🚀
+## Overview
+The **Package Manager** is a simple C program that allows users to install, remove, and list packages using a command-line interface. It maintains package information in an array and ensures that duplicate installations are prevented while enabling basic package management operations. 🚀
 
-Features
+## Features
+- 📦 **Install Packages** – Add packages to the system while avoiding duplicates.
+- 🗑 **Remove Packages** – Uninstall existing packages from the system.
+- 📋 **List Installed Packages** – View a list of currently installed packages.
+- ⚡ **Command-Line Interface** – Lightweight and easy to use.
 
-📦 Install Packages - Easily add new packages.
+## Repository Structure
+```
+Package-Manager/
+│── src/                  # Source code files
+│── include/              # Header files
+│── docs/                 # Documentation
+│── main.c                # Main program file
+│── Makefile              # Build script
+│── README.md             # Project documentation
+```
 
-🗑 Remove Packages - Uninstall packages when no longer needed.
+## Technologies Used
+- **Programming Language**: C
+- **Data Structures**: Arrays, Structs
+- **Development Tools**: GCC, Makefile
 
-📜 List Installed Packages - View currently installed packages.
+## Installation & Usage
+### Prerequisites
+Ensure you have a C compiler (GCC or Clang) installed on your system.
 
-🔒 Prevents Duplicate Installations - Ensures each package is installed only once.
+### Build & Run
+```bash
+# Clone the repository
+git clone https://github.com/your-username/Package-Manager.git
 
-Technologies Used
-
-Programming Language: C
-
-Data Structures: Arrays, Structs
-
-Input Handling: Standard I/O
-
-Memory Management: Static Allocation
-
-Installation & Compilation
-
-To compile and run the program, use the following commands:
+# Navigate to the project directory
+cd Package-Manager
 
 # Compile the program
-gcc package_manager.c -o package_manager
+make
 
-# Run the program
+# Run the Package Manager
 ./package_manager
+```
 
-Usage
+## Usage
+1. **Launch the Package Manager**
+   ```bash
+   ./package_manager
+   ```
+2. **Follow on-screen instructions** to install, remove, or list packages.
+3. **Exit the program** when done.
 
-1. Launch the Package Manager
-./package_manager
+## Contributors
+- **Bhavesh Mishra** *(Lead Developer)*
 
-2. Choose from the menu options:
+## Contributing
+Contributions are welcome! If you find any issues or want to improve the project, feel free to fork the repository and submit a pull request.
 
-1. Install Package: Enter a package name to install.
-
-2. Remove Package: Enter a package name to remove.
-
-3. List Installed Packages: Displays a list of installed packages.
-
-4. Exit: Closes the program
-
-Contributors
-
-Bhavesh Mishra (Lead Developer)
-
+---
+Developed with ❤️ to simplify package management using C.
